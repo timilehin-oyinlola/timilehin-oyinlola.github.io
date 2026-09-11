@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timilehin Oyinlola (Ark) — Backend & Security Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #080b13;
+            color: #e2e8f0;
+        }
+        .hero-headline {
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        .grain {
+            background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.035) 1px, transparent 0);
+            background-size: 22px 22px;
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .fade-in {
+                animation: fadeIn 0.6s ease-out both;
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="min-h-screen selection:bg-blue-500 selection:text-white">
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#080b13]/85 border-b border-[#1c2333]">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg text-white tracking-tight flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-blue-500 inline-block"></span>
+                Timilehin Oyinlola <span class="text-slate-500 font-normal text-sm">/ Ark</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-400">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+                <a href="#beyond" class="hover:text-white transition-colors">Beyond Code</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="https://github.com/timilehin-oyinlola" target="_blank" rel="noopener noreferrer" class="text-xs bg-[#141a29] hover:bg-[#1c2333] text-slate-200 px-3 py-1.5 rounded-lg border border-[#1c2333] transition-colors">GitHub</a>
+                <a href="https://www.linkedin.com/in/timilehin-oyinlola-228296317" target="_blank" rel="noopener noreferrer" class="text-xs bg-blue-600 hover:bg-blue-500 text-white px-3 py-1.5 rounded-lg font-medium transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="grain">
+        <div class="max-w-5xl mx-auto px-6 pt-20 pb-16">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium mb-6">
+                    <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                    Available for opportunities & collaborations
+                </div>
+                <h1 class="hero-headline text-4xl md:text-5xl text-white leading-tight mb-6">
+                    Building robust backends, then learning to defend them.
+                </h1>
+                <p class="text-slate-400 text-lg leading-relaxed mb-8">
+                    Computer Science student at Lagos State University (LASU) building with Python and FastAPI, currently deepening into networking and cybersecurity — CCNA in progress, alongside hands-on packet analysis and threat labs.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-5 py-2.5 rounded-xl text-sm transition-colors">
+                        Explore Projects
+                    </a>
+                    <a href="#contact" class="bg-[#0f1420] hover:bg-[#141a29] text-slate-300 font-medium px-5 py-2.5 rounded-xl text-sm border border-[#1c2333] transition-colors">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-5xl mx-auto px-6 py-16 border-t border-[#141a29]">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-3">About Me</h2>
+        <h3 class="text-2xl font-bold text-white mb-6">Engineering secure, scalable systems</h3>
+        <div class="grid md:grid-cols-2 gap-8 text-slate-400 leading-relaxed text-sm">
+            <div>
+                <p class="mb-4">
+                    I am a software developer and undergraduate student based in Lagos, Nigeria. My work bridges the gap between clean backend code and resilient system infrastructure.
+                </p>
+                <p>
+                    Whether building full-stack web applications, REST APIs, or exploring threat analysis and network defense protocols, I approach technical challenges with a focus on maintainability and performance.
+                </p>
+            </div>
+            <div class="bg-[#0f1420] border border-[#1c2333] p-6 rounded-2xl flex flex-col justify-between">
+                <blockquote class="text-slate-300 italic mb-4">
+                    "Complexity in simplicity."
+                </blockquote>
+                <div class="text-xs text-slate-500 font-mono">
+                    LASU Computer Science, Backend & Security, Lagos, NG
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-16 border-t border-[#141a29]">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-3">Portfolio</h2>
+        <h3 class="text-2xl font-bold text-white mb-8">Featured Projects</h3>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Project 1: TAYORA SUSTAIN -->
+            <div class="bg-[#0f1420] border border-[#1c2333] rounded-2xl p-6 flex flex-col justify-between hover:border-slate-600 transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-mono bg-blue-500/10 text-blue-400 px-2.5 py-1 rounded-md border border-blue-500/20">Backend Architecture</span>
+                        <span class="text-xs text-slate-500">FastAPI, PostgreSQL</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">TAYORA SUSTAIN</h4>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Robust backend architecture built with FastAPI, PostgreSQL, SQLAlchemy, JWT authentication, and Cloudinary integration for a sustainability tracking platform deployed on Render.
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 text-xs text-slate-400">
+                    <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Production Ready</span>
+                </div>
+            </div>
+
+            <!-- Project 2: AI Campus Assistant -->
+            <div class="bg-[#0f1420] border border-[#1c2333] rounded-2xl p-6 flex flex-col justify-between hover:border-slate-600 transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-mono bg-purple-500/10 text-purple-400 px-2.5 py-1 rounded-md border border-purple-500/20">Hackathon Winner</span>
+                        <span class="text-xs text-slate-500">GDGoC LASU</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">AI Campus Assistant</h4>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Co-developed an AI-powered assistant application with team Pilot that won the GDGoC LASU Build with Gemma hackathon, streamlining student navigation and resource access.
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 text-xs text-slate-400">
+                    <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span> 1st Place Winner</span>
+                </div>
+            </div>
+
+            <!-- Project 3: CrudeWatch -->
+            <div class="bg-[#0f1420] border border-[#1c2333] rounded-2xl p-6 flex flex-col justify-between hover:border-slate-600 transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-mono bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-md border border-emerald-500/20">Open Source</span>
+                        <span class="text-xs text-slate-500">Flask, SQLAlchemy</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">CrudeWatch</h4>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        An open-source, location-based fuel price tracking web application utilizing Flask, SQLAlchemy, and Bootstrap to crowdsource and monitor real-time fuel pricing data.
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 text-xs text-slate-400">
+                    <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Active Tool</span>
+                </div>
+            </div>
+
+            <!-- Project 4: Security & Diagnostics -->
+            <div class="bg-[#0f1420] border border-[#1c2333] rounded-2xl p-6 flex flex-col justify-between hover:border-slate-600 transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-mono bg-orange-500/10 text-orange-400 px-2.5 py-1 rounded-md border border-orange-500/20">C++ & Security</span>
+                        <span class="text-xs text-slate-500">OOP, Wireshark</span>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Diagnostic & Analysis Systems</h4>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        C++ object-oriented diagnostic system application with a deployed full-stack REST API backend, alongside hands-on packet analysis and network security labs.
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 text-xs text-slate-400">
+                    <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Systems Engineering</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-5xl mx-auto px-6 py-16 border-t border-[#141a29]">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-3">Expertise</h2>
+        <h3 class="text-2xl font-bold text-white mb-8">Technical Stack</h3>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-[#0f1420] border border-[#1c2333] p-4 rounded-xl">
+                <div class="text-white font-medium text-sm mb-1">Backend</div>
+                <div class="text-slate-400 text-xs">Python, FastAPI, Flask, REST APIs, SQL</div>
+            </div>
+            <div class="bg-[#0f1420] border border-[#1c2333] p-4 rounded-xl">
+                <div class="text-white font-medium text-sm mb-1">Security & Networks</div>
+                <div class="text-slate-400 text-xs">Wireshark, Nmap, Cisco Packet Tracer, CCNA prep</div>
+            </div>
+            <div class="bg-[#0f1420] border border-[#1c2333] p-4 rounded-xl">
+                <div class="text-white font-medium text-sm mb-1">Databases & Cloud</div>
+                <div class="text-slate-400 text-xs">PostgreSQL, SQLite, SQLAlchemy, Render, Cloudinary</div>
+            </div>
+            <div class="bg-[#0f1420] border border-[#1c2333] p-4 rounded-xl">
+                <div class="text-white font-medium text-sm mb-1">Languages & Tools</div>
+                <div class="text-slate-400 text-xs">C++, JavaScript, Git, Linux, HTML/CSS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond Code Section -->
+    <section id="beyond" class="max-w-5xl mx-auto px-6 py-16 border-t border-[#141a29]">
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-blue-400 mb-3">Beyond Code</h2>
+        <h3 class="text-2xl font-bold text-white mb-8">Leadership & Community</h3>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-[#0f1420] border border-[#1c2333] rounded-2xl p-6">
+                <h4 class="text-lg font-bold text-white mb-2">General Secretary, TACSFON LASU</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Handling official correspondence, meeting agendas, and organizational documentation for The Apostolic Church Students' Fellowship of Nigeria, LASU Chapter, for the 2026/2027 administration.
+                </p>
+            </div>
+            <div class="bg-[#0f1420] border border-[#1c2333] rounded-2xl p-6">
+                <h4 class="text-lg font-bold text-white mb-2">Let's Grind 2.0</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Founded a WhatsApp-based accountability community helping undergraduates stay consistent on personal projects and study goals through the holiday break, inspired by a personal 100 Days of Python challenge.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-16 border-t border-[#141a29] mb-20">
+        <div class="bg-gradient-to-br from-blue-950/30 to-[#0f1420] border border-blue-500/20 rounded-3xl p-8 md:p-12 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Let's build something together</h2>
+            <p class="text-slate-400 text-sm max-w-lg mx-auto mb-8">
+                I'm always open to discussing backend engineering projects, cybersecurity initiatives, or collaborative opportunities.
+            </p>
+            <a href="mailto:timilehinoyinlola3@gmail.com" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-xl text-sm transition-colors">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#141a29] py-8 text-center text-xs text-slate-500">
+        <p>&copy; <span id="year"></span> Timilehin Oyinlola (Ark). All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
